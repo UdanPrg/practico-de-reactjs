@@ -1,15 +1,9 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const Home = () => {
     return(
-        <div>
-            <h1>React Shop</h1>
-            <a href="/recovery-password">recovery-password</a>
-            <br />
-            <a href="/login">login</a>
-            <br />
-            <a href="/skdfhkjdsf">Any</a>
-        </div>
+        <Header/>
     );
 }
 

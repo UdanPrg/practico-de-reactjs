@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
-import Login from '../containers/Login';
-import RecoveryPassword from '../containers/RecoveryPassword';
+import CreateNewPassword from '../containers/CreateNewPassword';
+import RecoveryPassword from '../containers/RecoveryPasswordMessage';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
-import '../styles/Login.scss';
+import '../styles/CreateNewPassword.scss';
 
 const App = () => {
     return(
@@ -14,7 +14,7 @@ const App = () => {
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/create-new-password" element={<CreateNewPassword />} />
                     <Route path="/recovery-password" element={<RecoveryPassword />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
